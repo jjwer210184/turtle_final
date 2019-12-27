@@ -1,3 +1,6 @@
+//vue.confing.js
 module.exports = {
-    publicPath: './'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/eric-project/'
+    : '/'
 }
